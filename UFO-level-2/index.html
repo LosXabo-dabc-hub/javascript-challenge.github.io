@@ -38,28 +38,28 @@
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
                         <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        <input class="form-control" id="datetime" type="text" placeholder="ex: 1/11/2011">
                       </li>
 					  <li class="filter list-group-item">
                         <label for="city">Enter a City</label>
-                        <input class="form-control" id="city" type="text" placeholder="bonita">
+                        <input class="form-control" id="city" type="text" placeholder="ex: bonita">
                       </li>
 					  <li class="filter list-group-item">
                         <label for="state">Enter a State</label>
-                        <input class="form-control" id="state" type="text" placeholder="ca">
+                        <input class="form-control" id="state" type="text" placeholder="ex: ca">
                       </li>
 					  <li class="filter list-group-item">
                         <label for="country">Enter a Country</label>
-                        <input class="form-control" id="country" type="text" placeholder="us">
+                        <input class="form-control" id="country" type="text" placeholder="ex: us">
                       </li>
 					  <li class="filter list-group-item">
                         <label for="shape">Enter a Shape</label>
-                        <input class="form-control" id="shape" type="text" placeholder="circle">
+                        <input class="form-control" id="shape" type="text" placeholder="ex: circle">
                       </li>
                     </ul>
                   </div>
                   <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-				  <button id="reset-btn" type="button" class="btn btn-default" onclick="document.getElementById('shape').value = ''" >Reset Table</button>
+				  <button id="reset-btn" type="button" class="btn btn-default" onclick="window.location.reload()" >Reset Table</button>
 
                 </form>
               </div>
@@ -93,6 +93,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
   <script src="static/js/data.js"></script>
   <script src="static/js/app.js"></script>
+  
+  <script>
+	function resetForm() {
+    document.getElementById("myForm").reset();
+  }
+</script>
+  
 </body>
 
 </html>
